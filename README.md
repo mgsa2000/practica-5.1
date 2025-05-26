@@ -83,11 +83,11 @@ networks:
 
   ejecutamos udo docker compose up -d y comenzará a descragar las imágenes.
 
-  ![](imageness/111.png)
+  ![](imagenes/111.png)
 
   Luego ejecutamos docker ps para ver todos los contenedores.
 
-![](imageness/222.png)
+![](imagenes/222.png)
 
 Por último accedemos a nuestro dominio:
-![](imageness/333.png)
+![](imagenes/333.png)
