@@ -1,20 +1,3 @@
-# practica-5.1
-
-En esta práctica usaremos docker y docker compose.
-
-EL primer paso que realizaremos sera crear una instancia con 20 gb de almacenamiento,aignarle una ip elástica y permitir el trafico http,https y ssh.  una vez creada,instalaremos docker y docker compose.
-Una vez descargado e instalado,procederemos a crear nuestro archivo de variable donde pondremos nuestro archivo de variables.
-
-````
-MYSQL_ROOT_PASSWORD=root
-MYSQL_DATABASE=prestashop
-MYSQL_USER=user
-MYSQL_PASSWORD=password
-DOMAIN=miguel.zapto.org
-````
-
-También , modificaremos el docker-compose.yml
-````
 version: '3.4'
 
 services:
@@ -79,15 +62,3 @@ volumes:
 networks: 
   backend-network:
   frontend-network:
-  ````
-
-  ejecutamos udo docker compose up -d y comenzará a descragar las imágenes.
-
-  ![](imageness/111.png)
-
-  Luego ejecutamos docker ps para ver todos los contenedores.
-
-![](imageness/222.png)
-
-Por último accedemos a nuestro dominio:
-![](imageness/333.png)
